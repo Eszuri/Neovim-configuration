@@ -25,7 +25,7 @@ Konfigurasi Neovim — koleksi pengaturan, plugin, keymap, dan skrip tambahan un
 
 1. Clone repositori ini di directory mana saja
    ```bash
-   git clone https://github.com/Eszuri/Neovim-configuration.git
+   git clone https://github.com/Eszuri/Neovim-Configuration.git
 2. buka folder dan salin file **init.nvim** dan folder **autoload** dan tempel di directory berikut:
    > C:\\Users\Your_Account\AppData\Local\nvim
 3. salin juga folder **configuration** dan **keymap** dan tempel di directory berikut:
@@ -35,3 +35,9 @@ Konfigurasi Neovim — koleksi pengaturan, plugin, keymap, dan skrip tambahan un
 
 **NOTE:**
 > compiler bisa gunakan dengan gcc, diinstal dengan chocolatey package manager (choco install mingw)
+
+---
+
+## GUI Neovim 
+1. [Neovide](https://neovide.dev/)
+2. [Nvy](https://github.com/RMichelsen/Nvy)
