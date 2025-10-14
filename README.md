@@ -13,6 +13,12 @@ Konfigurasi Neovim — koleksi pengaturan, plugin, keymap, dan skrip tambahan un
 
 ---
 
+## Requirement (persyaratan)
+1. node js (LTS)
+2. C compiler (gcc, cc, clang, zig)
+   > untuk compile dari plugin treesitter
+
+---
 ## 🛠️ Instalasi
 
 > **Untuk Windows**
@@ -26,3 +32,6 @@ Konfigurasi Neovim — koleksi pengaturan, plugin, keymap, dan skrip tambahan un
    > C:\\Users\Your_Account\\.config\nvim
 
    ***jika belum ada folder maka new folder saja***
+
+**NOTE:**
+> compiler bisa gunakan dengan gcc, diinstal dengan chocolatey package manager (choco install mingw)
