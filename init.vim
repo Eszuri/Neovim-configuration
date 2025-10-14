@@ -48,4 +48,5 @@ execute 'source ' . g:config_dir . '/configuration/neo-tree.lua'
 execute 'source ' . g:config_dir . '/configuration/lualine.lua'
 execute 'source ' . g:config_dir . '/configuration/telescope.lua'
 execute 'source ' . g:config_dir . '/keymap/keymap.lua'
-execute 'source ' . g:config_dir . '/keymap/default.lua'
+" execute 'source ' . g:config_dir . '/keymap/default.lua'
+" gunakan keymap default jika arrow error
