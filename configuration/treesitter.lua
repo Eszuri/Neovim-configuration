@@ -1,26 +1,26 @@
-require'nvim-treesitter.configs'.setup{
-    ensure_installed = {
-	    "html",
-	    "css",
-	    "scss",
-	    "javascript",
-	    "tsx",
-	    "typescript",
-	    "json",
-	    "lua",
-	    "bash",
-	    "cmake",
-	    "cpp",
-	    "c",
-	    "php",
-	    "csv",
-	    "dart",
-	    "dockerfile",
-	    "vim"
-	    },
-    highlight = {enable=true},
-    auto_install = true
-}
-
-
-require ('nvim-treesitter.install').compilers = { 'gcc' }
+require('nvim-treesitter').install({
+    2     'bash',
+    3     'c',
+    4     'cmake',
+    5     'cpp',
+    6     'css',
+    7     'csv',
+    8     'dart',
+    9     'dockerfile',
+   10     'gitignore',
+   11     'go',
+   12     'html',
+   13     'typescript',
+   14     'json',
+   15     'lua',
+   16     'php',
+   17     'python',
+   18     'rust',
+   19     'javascript',
+   20     'jsx',
+   21     'tsx',
+   22     'xml',
+   23     'vim',
+   24     'yuck',
+   25 })
+~
