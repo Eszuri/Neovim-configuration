@@ -3,16 +3,17 @@ let g:config_dir = $HOME . '/.config/nvim'
 call plug#begin('$HOME/.config/nvim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'Mofiqul/vscode.nvim'
-Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'brenoprata10/nvim-highlight-colors'
 Plug 'nvim-neo-tree/neo-tree.nvim'
-Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'MunifTanjim/nui.nvim'
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'tami5/sqlite.lua'
-Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.8' }
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'mg979/vim-visual-multi',{'branch':'master'}
 call plug#end()
 
@@ -37,6 +38,10 @@ set title
 set noswapfile
 set termguicolors
 set t_Co=256
+set hlsearch
+set incsearch
+set winblend=10
+set pumblend=10
 
 
 "import setting or configuration

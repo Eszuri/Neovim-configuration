@@ -70,3 +70,13 @@ map("v", "<S-A-Down>", ":t '>+1<CR>gv", opts)
 -- Delete word in insert mode (Ctrl+Backspace)
 map("i", "<C-BS>", "<C-w>")
 map("i", "<C-H>", "<C-w>") 
+
+
+-- CTRL + F → search text di file yang sedang dibuka
+map("i","<C-f>", "<Esc>:Telescope current_buffer_fuzzy_find<CR>")
+map("n","<C-f>", ":Telescope current_buffer_fuzzy_find<CR>")
+
+-- CTRL + SHIFT + F → search text global (seluruh project)
+map("i","<C-S-f>", "<Esc>:Telescope live_grep<CR>")
+map("n","<C-S-f>", ":Telescope live_grep<CR>")
+

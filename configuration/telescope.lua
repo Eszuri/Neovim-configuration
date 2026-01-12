@@ -1,8 +1,19 @@
-require('telescope').setup{
+require("telescope").setup{
   defaults = {
-    -- Pengaturan default lainnya
+    initial_mode = "insert",
+    sorting_strategy = "ascending",
+    layout_strategy = "horizontal",
+    layout_config = {
+      prompt_position = "top",
+    },
   },
- }
 
-
-vim.api.nvim_set_keymap('n', '<C-f>', "<cmd>Telescope grep_string<cr>", { noremap = true, silent = true })
+  pickers = {
+    live_grep = {
+      previewer = false,
+    },
+    current_buffer_fuzzy_find = {
+      previewer = false,
+    },
+  },
+}
