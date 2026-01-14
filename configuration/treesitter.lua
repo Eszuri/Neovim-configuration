@@ -1,26 +1,35 @@
-require('nvim-treesitter').install({
-    2     'bash',
-    3     'c',
-    4     'cmake',
-    5     'cpp',
-    6     'css',
-    7     'csv',
-    8     'dart',
-    9     'dockerfile',
-   10     'gitignore',
-   11     'go',
-   12     'html',
-   13     'typescript',
-   14     'json',
-   15     'lua',
-   16     'php',
-   17     'python',
-   18     'rust',
-   19     'javascript',
-   20     'jsx',
-   21     'tsx',
-   22     'xml',
-   23     'vim',
-   24     'yuck',
-   25 })
-~
+require'nvim-treesitter.configs'.setup{
+    ensure_installed = {
+	   'bash',
+     'c',
+     'cmake',
+     'cpp',
+     'css',
+     'csv',
+     'dart',
+     'dockerfile',
+     'gitignore',
+     'go',
+     'html',
+     'typescript',
+     'json',
+     'lua',
+     'php',
+     'python',
+     'rust',
+     'javascript',
+     'jsx',
+     'tsx',
+     'xml',
+     'vim',
+     'yuck',  
+	    },
+    highlight = {enable=true},
+    
+  -- Automatically install missing parsers when entering buffer
+  -- Recommendation: set to false if you don't have `tree-sitter` CLI installed locally
+    auto_install = true,
+    sync_install = true,
+}
+require ('nvim-treesitter.install').compilers = { 'gcc' }
+-- compiler can install using gcc 'scoop install mingw'
