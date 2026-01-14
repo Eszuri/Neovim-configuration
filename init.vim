@@ -1,20 +1,25 @@
 let g:config_dir = $HOME . '/.config/nvim'
+let g:sqlite_clib_path = $HOME . '/.config/nvim/dll/sqlite3Win.dll'
 
 call plug#begin('$HOME/.config/nvim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'Mofiqul/vscode.nvim'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate', 'branch': 'master'}
 Plug 'brenoprata10/nvim-highlight-colors'
 Plug 'nvim-neo-tree/neo-tree.nvim'
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'MunifTanjim/nui.nvim'
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lualine/lualine.nvim'
-Plug 'tami5/sqlite.lua'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'mg979/vim-visual-multi',{'branch':'master'}
+Plug 'kkharji/sqlite.lua'
+Plug 'stevearc/dressing.nvim'
+Plug 'mrjones2014/legendary.nvim'
+Plug 'numToStr/Comment.nvim'
+Plug 'JoosepAlviste/nvim-ts-context-commentstring'
 call plug#end()
 
 "basic configuration"
@@ -52,6 +57,9 @@ execute 'source ' . g:config_dir . '/configuration/highlight-color.lua'
 execute 'source ' . g:config_dir . '/configuration/neo-tree.lua'
 execute 'source ' . g:config_dir . '/configuration/lualine.lua'
 execute 'source ' . g:config_dir . '/configuration/telescope.lua'
+execute 'source ' . g:config_dir . '/configuration/legendary.lua'
+execute 'source ' . g:config_dir . '/configuration/comment.lua'
+execute 'source ' . g:config_dir . '/configuration/commentstring.lua'
 execute 'source ' . g:config_dir . '/keymap/keymap.lua'
 " execute 'source ' . g:config_dir . '/keymap/default.lua'
 " gunakan keymap default jika arrow error

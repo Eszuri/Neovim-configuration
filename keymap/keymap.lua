@@ -80,3 +80,7 @@ map("n","<C-f>", ":Telescope current_buffer_fuzzy_find<CR>")
 map("i","<C-S-f>", "<Esc>:Telescope live_grep<CR>")
 map("n","<C-S-f>", ":Telescope live_grep<CR>")
 
+-- COMMAND PALETTE (LEGENDARY)
+map("n", "<C-S-P>", "<cmd>Legendary<CR>" )
+map("v", "<C-S-P>", "<cmd>Legendary<CR>" )
+map("i", "<C-S-P>", "<Esc><cmd>Legendary<CR>" )
