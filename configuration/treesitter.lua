@@ -18,7 +18,6 @@ require'nvim-treesitter.configs'.setup{
      'python',
      'rust',
      'javascript',
-     'jsx',
      'tsx',
      'xml',
      'vim',
