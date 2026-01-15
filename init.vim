@@ -20,7 +20,11 @@ Plug 'stevearc/dressing.nvim'
 Plug 'mrjones2014/legendary.nvim'
 Plug 'numToStr/Comment.nvim'
 Plug 'JoosepAlviste/nvim-ts-context-commentstring'
+Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'tpope/vim-fugitive'
 call plug#end()
+
+
 
 "basic configuration"
 set shiftwidth=4
@@ -60,6 +64,7 @@ execute 'source ' . g:config_dir . '/configuration/telescope.lua'
 execute 'source ' . g:config_dir . '/configuration/legendary.lua'
 execute 'source ' . g:config_dir . '/configuration/comment.lua'
 execute 'source ' . g:config_dir . '/configuration/commentstring.lua'
+execute 'source ' . g:config_dir . '/configuration/indent.lua'
 execute 'source ' . g:config_dir . '/keymap/keymap.lua'
 " execute 'source ' . g:config_dir . '/keymap/default.lua'
 " gunakan keymap default jika arrow error

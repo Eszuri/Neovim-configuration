@@ -71,16 +71,15 @@ map("v", "<S-A-Down>", ":t '>+1<CR>gv", opts)
 map("i", "<C-BS>", "<C-w>")
 map("i", "<C-H>", "<C-w>") 
 
-
 -- CTRL + F → search text di file yang sedang dibuka
-map("i","<C-f>", "<Esc>:Telescope current_buffer_fuzzy_find<CR>")
-map("n","<C-f>", ":Telescope current_buffer_fuzzy_find<CR>")
+map("i","<C-f>", "<Esc>:Telescope current_buffer_fuzzy_find<CR>",opts)
+map("n","<C-f>", ":Telescope current_buffer_fuzzy_find<CR>",opts)
 
 -- CTRL + SHIFT + F → search text global (seluruh project)
-map("i","<C-S-f>", "<Esc>:Telescope live_grep<CR>")
-map("n","<C-S-f>", ":Telescope live_grep<CR>")
+map("i","<C-S-f>", "<Esc>:Telescope live_grep<CR>",opts)
+map("n","<C-S-f>", ":Telescope live_grep<CR>",opts)
 
 -- COMMAND PALETTE (LEGENDARY)
-map("n", "<C-S-P>", "<cmd>Legendary<CR>" )
-map("v", "<C-S-P>", "<cmd>Legendary<CR>" )
-map("i", "<C-S-P>", "<Esc><cmd>Legendary<CR>" )
+map("n", "<C-S-P>", "<cmd>Legendary<CR>",opts)
+map("v", "<C-S-P>", "<cmd>Legendary<CR>",opts)
+map("i", "<C-S-P>", "<Esc><cmd>Legendary<CR>",opts)
