@@ -1,6 +1,7 @@
 let g:config_dir = $HOME . '/.config/nvim'
 let g:sqlite_clib_path = $HOME . '/.config/nvim/dll/sqlite3Win.dll'
 
+
 call plug#begin('$HOME/.config/nvim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'Mofiqul/vscode.nvim'
@@ -23,8 +24,16 @@ Plug 'JoosepAlviste/nvim-ts-context-commentstring'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'tpope/vim-fugitive'
 Plug 'supermaven-inc/supermaven-nvim'
+Plug 'olimorris/codecompanion.nvim'
+Plug 'folke/noice.nvim'
+Plug 'rcarriga/nvim-notify'
+Plug 'MeanderingProgrammer/render-markdown.nvim'
+Plug 'HakonHarnes/img-clip.nvim'
+Plug 'saghen/blink.cmp', { 'tag': 'v1.*' }
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
 call plug#end()
-
 
 
 "basic configuration"
@@ -52,6 +61,8 @@ set hlsearch
 set incsearch
 set winblend=10
 set pumblend=10
+set background=dark
+colorscheme vscode
 
 
 "import setting or configuration
@@ -67,6 +78,7 @@ execute 'source ' . g:config_dir . '/configuration/comment.lua'
 execute 'source ' . g:config_dir . '/configuration/commentstring.lua'
 execute 'source ' . g:config_dir . '/configuration/indent.lua'
 execute 'source ' . g:config_dir . '/configuration/supermaven.lua'
+execute 'source ' . g:config_dir . '/configuration/codecompanion.lua'
 execute 'source ' . g:config_dir . '/keymap/keymap.lua'
 " execute 'source ' . g:config_dir . '/keymap/default.lua'
 " gunakan keymap default jika arrow error
