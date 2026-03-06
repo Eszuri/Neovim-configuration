@@ -17,6 +17,8 @@ Konfigurasi Neovim — koleksi pengaturan, plugin, keymap, dan skrip tambahan un
 1. node js (LTS)
 2. C compiler (gcc, cc, clang, zig)
    > untuk compile dari plugin treesitter
+3. `pynvim` untuk supermaven
+   > pip install pynvim `atau` pip3 install pynvim
 
 ---
 ## 🛠️ Instalasi
