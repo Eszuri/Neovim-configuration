@@ -22,6 +22,7 @@ Plug 'numToStr/Comment.nvim'
 Plug 'JoosepAlviste/nvim-ts-context-commentstring'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'tpope/vim-fugitive'
+Plug 'supermaven-inc/supermaven-nvim'
 call plug#end()
 
 
@@ -65,6 +66,7 @@ execute 'source ' . g:config_dir . '/configuration/legendary.lua'
 execute 'source ' . g:config_dir . '/configuration/comment.lua'
 execute 'source ' . g:config_dir . '/configuration/commentstring.lua'
 execute 'source ' . g:config_dir . '/configuration/indent.lua'
+execute 'source ' . g:config_dir . '/configuration/supermaven.lua'
 execute 'source ' . g:config_dir . '/keymap/keymap.lua'
 " execute 'source ' . g:config_dir . '/keymap/default.lua'
 " gunakan keymap default jika arrow error
