@@ -22,7 +22,7 @@ require'nvim-treesitter.configs'.setup{
      'xml',
      'vim',
      'yuck',  
-	   'yaml'
+	 'yaml'
 	    },
     highlight = {enable=true},
     
