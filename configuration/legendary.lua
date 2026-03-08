@@ -45,7 +45,7 @@ require('legendary').setup({
      {
       ':AIPromptLibrary', -- Nama perintah baru
       ':CodeCompanionActions',        -- Perintah asli Neovim
-      description = 'Simpan file aktif saat ini',
+      description = 'Membuka Menu dari CodeCompanion',
     },
     },
   })

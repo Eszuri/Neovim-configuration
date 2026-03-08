@@ -1,5 +1,6 @@
 let g:config_dir = $HOME . '/.config/nvim'
 let g:sqlite_clib_path = $HOME . '/.config/nvim/dll/sqlite3Win.dll'
+autocmd! User avante.nvim
 
 
 call plug#begin('$HOME/.config/nvim/plugged')
@@ -33,6 +34,8 @@ Plug 'saghen/blink.cmp', { 'tag': 'v1.*' }
 Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
+Plug 'windwp/nvim-ts-autotag'
+Plug 'yetone/avante.nvim', { 'branch': 'main' }
 call plug#end()
 
 
@@ -79,6 +82,8 @@ execute 'source ' . g:config_dir . '/configuration/commentstring.lua'
 execute 'source ' . g:config_dir . '/configuration/indent.lua'
 execute 'source ' . g:config_dir . '/configuration/supermaven.lua'
 execute 'source ' . g:config_dir . '/configuration/codecompanion.lua'
+execute 'source ' . g:config_dir . '/configuration/nvim-ts-autotag.lua'
+execute 'source ' . g:config_dir . '/configuration/avante.lua'
 execute 'source ' . g:config_dir . '/keymap/keymap.lua'
 " execute 'source ' . g:config_dir . '/keymap/default.lua'
-" gunakan keymap default jika arrow error
+" gunakan keymap default jika arrow error    
