@@ -19,6 +19,8 @@ Konfigurasi Neovim — koleksi pengaturan, plugin, keymap, dan skrip tambahan un
    > untuk compile dari plugin treesitter
 3. `pynvim` untuk supermaven
    > pip install pynvim `atau` pip3 install pynvim
+4. API Key (untuk plugin Avante)
+   > set Environment Variable `AVANTE_PROVIDER_API_KEY` dengan API Key anda
 
 ---
 ## 🛠️ Instalasi

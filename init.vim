@@ -25,15 +25,12 @@ Plug 'JoosepAlviste/nvim-ts-context-commentstring'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'tpope/vim-fugitive'
 Plug 'supermaven-inc/supermaven-nvim'
-Plug 'olimorris/codecompanion.nvim'
 Plug 'folke/noice.nvim'
+Plug 'folke/snacks.nvim'
 Plug 'rcarriga/nvim-notify'
 Plug 'MeanderingProgrammer/render-markdown.nvim'
 Plug 'HakonHarnes/img-clip.nvim'
-Plug 'saghen/blink.cmp', { 'tag': 'v1.*' }
 Plug 'hrsh7th/nvim-cmp'
-Plug 'hrsh7th/cmp-buffer'
-Plug 'hrsh7th/cmp-path'
 Plug 'windwp/nvim-ts-autotag'
 Plug 'yetone/avante.nvim', { 'branch': 'main' }
 call plug#end()
@@ -68,6 +65,7 @@ set background=dark
 colorscheme vscode
 
 
+
 "import setting or configuration
 execute 'source ' . g:config_dir . '/configuration/coc.vim'
 execute 'source ' . g:config_dir . '/configuration/treesitter.lua'
@@ -81,9 +79,10 @@ execute 'source ' . g:config_dir . '/configuration/comment.lua'
 execute 'source ' . g:config_dir . '/configuration/commentstring.lua'
 execute 'source ' . g:config_dir . '/configuration/indent.lua'
 execute 'source ' . g:config_dir . '/configuration/supermaven.lua'
-execute 'source ' . g:config_dir . '/configuration/codecompanion.lua'
 execute 'source ' . g:config_dir . '/configuration/nvim-ts-autotag.lua'
 execute 'source ' . g:config_dir . '/configuration/avante.lua'
+execute 'source ' . g:config_dir . '/configuration/notify.lua'
+execute 'source ' . g:config_dir . '/configuration/noice.lua'
 execute 'source ' . g:config_dir . '/keymap/keymap.lua'
 " execute 'source ' . g:config_dir . '/keymap/default.lua'
 " gunakan keymap default jika arrow error    
