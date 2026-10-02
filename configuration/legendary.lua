@@ -40,12 +40,4 @@ require('legendary').setup({
       mode = 'v',
     },
     },
-
-    commands = {
-     {
-      ':AIPromptLibrary', -- Nama perintah baru
-      ':CodeCompanionActions',        -- Perintah asli Neovim
-      description = 'Membuka Menu dari CodeCompanion',
-    },
-    },
-  })
+   })

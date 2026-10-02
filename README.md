@@ -15,12 +15,11 @@ Konfigurasi Neovim — koleksi pengaturan, plugin, keymap, dan skrip tambahan un
 
 ## Requirement (persyaratan)
 1. node js (LTS)
-2. C compiler (gcc, cc, clang, zig)
+2. C compiler (gcc, cc, clang, zig, cmake, make)
    > untuk compile dari plugin treesitter
 3. `pynvim` untuk supermaven
    > pip install pynvim `atau` pip3 install pynvim
-4. API Key (untuk plugin Avante)
-   > set Environment Variable `AVANTE_PROVIDER_API_KEY` dengan API Key anda
+
 
 ---
 ## 🛠️ Instalasi
@@ -38,7 +37,7 @@ Konfigurasi Neovim — koleksi pengaturan, plugin, keymap, dan skrip tambahan un
    ***jika belum ada folder maka new folder saja***
 
 **NOTE:**
-> compiler bisa gunakan dengan gcc, diinstal dengan chocolatey package manager (choco install mingw)
+> compiler bisa gunakan dengan gcc, diinstal dengan chocolatey package manager (choco install mingw cmake make)
 
 ---
 

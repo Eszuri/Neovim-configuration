@@ -1,21 +1,19 @@
 let g:config_dir = $HOME . '/.config/nvim'
 let g:sqlite_clib_path = $HOME . '/.config/nvim/dll/sqlite3Win.dll'
-autocmd! User avante.nvim
 
 
 call plug#begin('$HOME/.config/nvim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'Mofiqul/vscode.nvim'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate', 'branch': 'master'}
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate', 'branch': 'main'}
 Plug 'brenoprata10/nvim-highlight-colors'
 Plug 'nvim-neo-tree/neo-tree.nvim'
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'MunifTanjim/nui.nvim'
-Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release --target install' }
 Plug 'mg979/vim-visual-multi',{'branch':'master'}
 Plug 'kkharji/sqlite.lua'
 Plug 'stevearc/dressing.nvim'
@@ -26,13 +24,10 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'tpope/vim-fugitive'
 Plug 'supermaven-inc/supermaven-nvim'
 Plug 'folke/noice.nvim'
-Plug 'folke/snacks.nvim'
 Plug 'rcarriga/nvim-notify'
 Plug 'MeanderingProgrammer/render-markdown.nvim'
 Plug 'HakonHarnes/img-clip.nvim'
-Plug 'hrsh7th/nvim-cmp'
 Plug 'windwp/nvim-ts-autotag'
-Plug 'yetone/avante.nvim', { 'branch': 'main' }
 call plug#end()
 
 
@@ -80,7 +75,6 @@ execute 'source ' . g:config_dir . '/configuration/commentstring.lua'
 execute 'source ' . g:config_dir . '/configuration/indent.lua'
 execute 'source ' . g:config_dir . '/configuration/supermaven.lua'
 execute 'source ' . g:config_dir . '/configuration/nvim-ts-autotag.lua'
-execute 'source ' . g:config_dir . '/configuration/avante.lua'
 execute 'source ' . g:config_dir . '/configuration/notify.lua'
 execute 'source ' . g:config_dir . '/configuration/noice.lua'
 execute 'source ' . g:config_dir . '/keymap/keymap.lua'
