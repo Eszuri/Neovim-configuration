@@ -10,8 +10,7 @@ ts.install({
     'dockerfile', 'gitignore', 'go', 'html', 'typescript',
     'json', 'lua', 'php', 'python', 'rust', 'javascript',
     'tsx', 'xml', 'vim', 'yuck','markdown', 'markdown_inline',
-    'regex','yaml','toml','make','jsonc','c_sharp','java',
-    'rust'
+    'regex','yaml','toml','make','c_sharp','java','latex',
 })
 
 vim.api.nvim_create_autocmd('FileType', {
