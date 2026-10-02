@@ -7,13 +7,32 @@ require("noice").setup({
   },
 
   routes = {
+    -- handle if empty messages
+    {
+      filter = {
+        event = "msg_show",
+        find = "^%s*$",
+      },
+      opts = { skip = true },
+    },
+
+    -- title for messages save file
     {
       filter = {
         event = "msg_show",
         find = "written",
       },
       view = "notify", 
-      opts = { title = "Message" },
+      opts = { title = "File Saved" },
+    },
+
+    -- ignore search wrap
+    {
+      filter = {
+        event = "msg_show",
+        find = "search hit BOTTOM",
+      },
+      opts = { skip = true },
     },
   },
 
@@ -35,7 +54,7 @@ require("noice").setup({
         height = "auto",
       },
     },
-  popupmenu = {
+    popupmenu = {
       relative = "editor",
       position = {
         row = "53%",
@@ -51,13 +70,4 @@ require("noice").setup({
       },
     },
   },
-
-
-})
-
-
-vim.api.nvim_create_autocmd("BufWritePost", {
-  callback = function()
-    vim.cmd("redraw")
-  end,
 })
