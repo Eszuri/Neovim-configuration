@@ -1,6 +1,6 @@
 # Neovim-configuration
 
-Konfigurasi Neovim — koleksi pengaturan, plugin, keymap, dan skrip tambahan untuk meningkatkan pengalaman menggunakan Neovim.
+Konfigurasi Neovim — koleksi pengaturan, plugin, keymap, dan skrip tambahan untuk memudahkan menggunakan Neovim.
 
 ---
 
@@ -19,6 +19,8 @@ Konfigurasi Neovim — koleksi pengaturan, plugin, keymap, dan skrip tambahan un
    > untuk compile dari plugin treesitter
 3. `pynvim` untuk supermaven
    > pip install pynvim `atau` pip3 install pynvim
+4. [`tree-sitter-cli`](https://github.com/tree-sitter/tree-sitter/blob/master/crates/cli/README.md) untuk build parser tambahan dari treesitter
+5. versi minimal neovim 0.12.0 atau terbaru
 
 
 ---
@@ -37,7 +39,7 @@ Konfigurasi Neovim — koleksi pengaturan, plugin, keymap, dan skrip tambahan un
    ***jika belum ada folder maka new folder saja***
 
 **NOTE:**
-> compiler bisa gunakan dengan gcc, diinstal dengan chocolatey package manager (choco install mingw cmake make)
+> compiler bisa gunakan dengan gcc, diinstal dengan chocolatey package manager (choco install mingw cmake)
 
 ---
 
