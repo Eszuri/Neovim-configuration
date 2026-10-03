@@ -1,7 +1,30 @@
 {
-	"coc.preferences.formatOnSaveFiletypes": [
-		"*"
-	],
-  "coc.preferences.formatOnSave": true,
-  "snippets.ultisnips.pythonPrompt": false
+    // --- Formatter & General ---
+    "coc.preferences.formatOnSave": true,
+    "svelte.enable-ts-plugin": true,
+    // --- Visual Diagnostics ---
+    "diagnostic.enable": true,
+    "diagnostic.virtualText": true,
+    "diagnostic.virtualTextCurrentLineOnly": false,
+    "diagnostic.enableSign": true,
+    "diagnostic.errorSign": " ",
+    "diagnostic.warningSign": " ",
+    "diagnostic.infoSign": " ",
+    "diagnostic.hintSign": " ",
+    "diagnostic.checkCurrentLine": true,
+    // --- Autocompletion & Suggestions ---
+    "suggest.noselect": false,
+    "suggest.enablePreselect": true,
+    "suggest.enableFloat": true,
+    "suggest.maxCompleteItemCount": 15,
+    "suggest.detailField": "preview",
+    // --- Parameter & Hover Help ---
+    "signature.enable": true,
+    "signature.target": "float",
+    "hover.target": "float",
+    // --- Inlay Hints (TypeScript / Svelte) ---
+    "inlayHint.enable": true,
+    "javascript.inlayHints.parameterNames.enabled": "all",
+    "typescript.inlayHints.parameterNames.enabled": "all",
+    "typescript.inlayHints.variableTypes.enabled": true
 }

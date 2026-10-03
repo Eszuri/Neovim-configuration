@@ -67,7 +67,7 @@ colorscheme vscode
 
 
 "import setting or configuration
-execute 'source ' . g:config_dir . '/configuration/coc.vim'
+execute 'source ' . g:config_dir . '/configuration/coc.lua'
 execute 'source ' . g:config_dir . '/configuration/treesitter.lua'
 execute 'source ' . g:config_dir . '/configuration/vscode.lua'
 execute 'source ' . g:config_dir . '/configuration/highlight-color.lua'
