@@ -2,7 +2,7 @@ let g:config_dir = $HOME . '/.config/nvim'
 let g:sqlite_clib_path = $HOME . '/.config/nvim/dll/sqlite3Win.dll'
 let g:loaded_perl_provider = 0
 let g:loaded_ruby_provider = 0
-let g:loaded_node_provider = 1
+let g:loaded_node_provider = 0
 
 
 call plug#begin('$HOME/.config/nvim/plugged')

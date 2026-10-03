@@ -1,6 +1,5 @@
 -- dependency untuk auto completion
 vim.g.coc_global_extensions = {
-  'coc-ultisnips',
   'coc-json',
   'coc-tsserver',
   'coc-html',

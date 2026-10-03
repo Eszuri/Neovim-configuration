@@ -18,8 +18,5 @@ cmp.setup.cmdline(':', {
     { name = 'path' }
   }, {
     { name = 'cmdline' }
-  }),
-  experimental = {
-    ghost_text = true,
-  }
+  })
 })
