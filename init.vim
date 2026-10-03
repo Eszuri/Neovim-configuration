@@ -33,6 +33,7 @@ Plug 'HakonHarnes/img-clip.nvim'
 Plug 'windwp/nvim-ts-autotag'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
 call plug#end()
 
 

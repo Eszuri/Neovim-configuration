@@ -5,8 +5,21 @@ cmp.setup({
     ['<C-Space>'] = cmp.mapping.complete(),
     ['<CR>'] = cmp.mapping.confirm({ select = true }),
   }),
-  -- Daftarkan cmp-path sebagai sumber autocomplete
+  -- include path completion plugins
   sources = cmp.config.sources({
     { name = 'path' }
   })
+})
+
+-- Konfigurasi khusus command line (:)
+cmp.setup.cmdline(':', {
+  mapping = cmp.mapping.preset.cmdline(),
+  sources = cmp.config.sources({
+    { name = 'path' }
+  }, {
+    { name = 'cmdline' }
+  }),
+  experimental = {
+    ghost_text = true,
+  }
 })
