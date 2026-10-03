@@ -31,6 +31,8 @@ Plug 'rcarriga/nvim-notify'
 Plug 'MeanderingProgrammer/render-markdown.nvim'
 Plug 'HakonHarnes/img-clip.nvim'
 Plug 'windwp/nvim-ts-autotag'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-path'
 call plug#end()
 
 
@@ -81,6 +83,7 @@ execute 'source ' . g:config_dir . '/configuration/nvim-ts-autotag.lua'
 execute 'source ' . g:config_dir . '/configuration/render-markdown.lua'
 execute 'source ' . g:config_dir . '/configuration/notify.lua'
 execute 'source ' . g:config_dir . '/configuration/noice.lua'
+execute 'source ' . g:config_dir . '/configuration/nvim-cmp.lua'
 execute 'source ' . g:config_dir . '/keymap/keymap.lua'
 " execute 'source ' . g:config_dir . '/keymap/default.lua'
 " gunakan keymap default jika arrow error    
