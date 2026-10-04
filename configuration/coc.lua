@@ -4,10 +4,15 @@ vim.g.coc_global_extensions = {
   'coc-tsserver',
   'coc-html',
   'coc-css',
+  'coc-html-css-support',
+  'coc-class-css',
   'coc-yaml',
   'coc-highlight',
   '@yaegassy/coc-tailwindcss3',
   'coc-pairs',
+  'coc-emmet',
+  'coc-sh',
+  'coc-go'
 }
 
 -- Root patterns untuk html
