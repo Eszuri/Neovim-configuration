@@ -13,6 +13,7 @@ vim.g.coc_global_extensions = {
   'coc-emmet',
   'coc-sh',
   'coc-go'
+  '@obergodmar/coc-svelte-language-tools'
 }
 
 -- Root patterns untuk html
